@@ -92,7 +92,7 @@ for i in cursor:
           
         print(i)
 
-# pokemon con defensa entre 90 y 100
+# pokemon con defensa entre 20 y 25
 
 print("Los pokemon con defensa entre 90 y 100 son: ")
 
