@@ -83,9 +83,9 @@ for i in cursor:
 
 
 
-# pokemon con defensa entre 90 y 100
+# pokemon con defensa entre 20 y 25
 
-cursor.execute("SELECT * FROM Pokemon WHERE Defense BETWEEN 90 AND 100")
+cursor.execute("SELECT * FROM Pokemon WHERE Defense BETWEEN 20 AND 25")
 
 
 
@@ -94,3 +94,20 @@ cursor.execute("SELECT * FROM Pokemon WHERE Defense BETWEEN 90 AND 100")
 
 
 ```
+
+
+
+
+
+
+
+Los resultados de realizar estas instancias son los siguientes:
+
+
+<img width="941" alt="pok1" src="https://user-images.githubusercontent.com/91721643/227001057-f909b23a-24ad-435c-b017-53b171277c5d.png">
+<img width="960" alt="pok2" src="https://user-images.githubusercontent.com/91721643/227001106-e606046c-f247-4d60-94c4-92733390cbe6.png"><img width="937" alt="pok3" src="https://user-images.githubusercontent.com/91721643/227001126-77aaddcd-6a52-4b92-b1cf-2c6632379df2.png">
+
+
+
+
+
