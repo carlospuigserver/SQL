@@ -20,6 +20,9 @@ cursor.execute("INSERT INTO Pokemon (Number,Name,Type1,Type2,HP,Attack,Defense,S
 # SELECT
 
 cursor.execute("SELECT * FROM Pokemon WHERE Name = 'German'")
+
+print("Seleccionamos el pokemon que acabamos de insertar")
+
 for i in cursor:
     print(i)
 
@@ -27,7 +30,16 @@ for i in cursor:
 
 cursor.execute("UPDATE Pokemon SET Name = 'Mewtwo' WHERE Name = 'Miguel'")
 
+cursor.execute("SELECT * FROM Pokemon WHERE Name = 'Miguel'")
+
+print("Seleccionamos el pokemon que acabamos de actualizar")
+
+for i in cursor:
+    print(i)
+
 # DELETE
+
+print("Eliminamos a Raichu")
 
 cursor.execute("DELETE FROM Pokemon WHERE Name = 'Raichu'")
 
@@ -39,7 +51,10 @@ for i in cursor:
 
     print(i)
 
+ 
 # obtener el numero de registros
+
+print("El numero de registros es: ")
 
 cursor.execute("SELECT COUNT(*) FROM Pokemon")
 
@@ -49,6 +64,8 @@ for i in cursor:
 
 # agrupar por tipo
 
+print("Agrupamos por tipo")
+
 cursor.execute("SELECT Type1, COUNT(*) FROM Pokemon GROUP BY Type1")
 
 for i in cursor:
@@ -57,31 +74,33 @@ for i in cursor:
 
 # obtener el promedio de ataque
 
+print("El promedio de ataque es: ")
+
 cursor.execute("SELECT AVG(Attack) FROM Pokemon")
 
 for i in cursor:
 
     print("El promedio de ataque es", i)
 
-# filtrar por ataque mayor que 100
+# filtrar por ataque mayor que 160
 
-cursor.execute("SELECT * FROM Pokemon WHERE Attack > 100")
+print("Los pokemon con ataque mayor que 160 son: ")
+
+cursor.execute("SELECT * FROM Pokemon WHERE Attack > 160")
 
 for i in cursor:
           
         print(i)
 
-# ordenar por defensa
-
-cursor.execute("SELECT * FROM Pokemon ORDER BY Defense")
-
-for i in cursor:
-
-    print(i)
-
 # pokemon con defensa entre 90 y 100
 
-cursor.execute("SELECT * FROM Pokemon WHERE Defense BETWEEN 90 AND 100")
+print("Los pokemon con defensa entre 90 y 100 son: ")
+
+cursor.execute("SELECT * FROM Pokemon WHERE Defense BETWEEN 20 AND 25")
+
+for i in cursor:
+      
+        print(i)
 
 
 
