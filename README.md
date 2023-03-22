@@ -1,5 +1,7 @@
 # SQL
 
+
+El link de este repositorio es el siguiente: https://github.com/carlospuigserver/SQL.git
 El código que hemos realizado para usar una serie de instancias sql a partir de un csv exixtente, pasado a base de datos y de este creado una tabla es el siguiente:
 
 ```
