@@ -1,1 +1,0 @@
-SELECT * FROM Pokemon WHERE Name = 'Pikachu';
