@@ -81,13 +81,7 @@ for i in cursor:
           
         print(i)
 
-# ordenar por defensa
 
-cursor.execute("SELECT * FROM Pokemon ORDER BY Defense")
-
-for i in cursor:
-
-    print(i)
 
 # pokemon con defensa entre 90 y 100
 
